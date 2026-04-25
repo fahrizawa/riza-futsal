@@ -28,3 +28,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('fields', FieldController::class);
 });
 // require __DIR__.'/auth.php';
+use App\Http\Controllers\TeamController;
+
+Route::resource('teams', TeamController::class);

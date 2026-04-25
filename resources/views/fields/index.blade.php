@@ -35,11 +35,18 @@
 <body class="bg-background text-foreground min-h-screen flex flex-col">
 
 <nav class="bg-white border-b border-border px-6 py-4 shadow-sm flex justify-between items-center">
-    <div class="flex items-center gap-2">
-        <div class="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
-            <span class="text-primary-foreground font-bold">F</span>
+    <div class="flex items-center gap-8">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
+                <span class="text-primary-foreground font-bold">F</span>
+            </div>
+            <span class="text-xl font-bold">FutsalAdmin</span>
         </div>
-        <span class="text-xl font-bold">FutsalAdmin</span>
+        
+        <div class="hidden sm:flex items-center gap-6 border-l pl-6 border-gray-200">
+            <a href="#" class="text-sm font-semibold text-primary border-b-2 border-primary pb-1">Lapangan</a>
+            <a href="{{ route('teams.index') }}" class="text-sm font-medium text-gray-500 hover:text-primary transition-colors pb-1">Tim Futsal</a>
+        </div>
     </div>
     
     <div class="flex items-center gap-4">
